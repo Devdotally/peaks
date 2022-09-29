@@ -1,9 +1,3 @@
-/**
-* Template Name: Bikin - v4.9.0
-* Template URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -42,7 +36,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3b4ef8;
+  background: black;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -84,7 +78,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #3b4ef8;
+  border: 6px solid #ffc451;
   border-top-color: #e2e5fe;
   border-radius: 50%;
   width: 60px;
@@ -559,7 +553,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #070707;
+  background-image: url('/assets/img/about.png');
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -631,32 +625,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  background: #f6f7ff;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.clients img {
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-}
-
-.clients img:hover {
-  transform: scale(1.15);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
-}
-
-/*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 .features .content+.content {
@@ -688,304 +656,19 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Steps
---------------------------------------------------------------*/
-.steps {
-  padding-top: 20px;
+.service-1{
+  border-radius: 18px;
+  background: white;
+  box-shadow:   5px 5px 13px #c7c7c7,
+       -5px -5px 13px #f9f9f9
 }
 
-.steps .row {
-  overflow: hidden;
-}
+.service-2{
+  border-radius: 18px;
+background: white;
+box-shadow:  -5px 5px 13px #c7c7c7,
+5px -5px 13px #f9f9f9;
 
-.steps .content-item {
-  padding: 40px;
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  margin: -1px;
-}
-
-.steps .content-item span {
-  display: block;
-  font-size: 24px;
-  font-weight: 400;
-  color: #3b4ef8;
-}
-
-.steps .content-item h4 {
-  font-size: 28px;
-  font-weight: 400;
-  padding: 0;
-  margin: 20px 0;
-  color: #2d405f;
-}
-
-.steps .content-item p {
-  color: #aaaaaa;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .steps .content-item {
-    padding: 40px 0;
-  }
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services {
-  background: #2d405f;
-  padding-bottom: 80px;
-}
-
-.services .section-title h2,
-.services .section-title p {
-  color: #fff;
-}
-
-.services .section-title h2::after {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.services .icon-box {
-  padding: 50px 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.3s;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.services .icon-box:hover {
-  transform: scale(1.08);
-}
-
-.services .icon {
-  margin-bottom: 15px;
-}
-
-.services .icon i {
-  font-size: 32px;
-  line-height: 1;
-  color: #2d405f;
-  background: #eff2f8;
-  padding: 20px;
-  border-radius: 50px;
-  transition: all 0.3s;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #2d405f;
-  transition: 0.3s;
-}
-
-.services .title a:hover {
-  color: #4e6fa4;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 3px;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background: #3b4ef8;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(45, 64, 95, 0.6);
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(45, 64, 95, 0.6);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 5px 0 0;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #9da7fc;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #3b4ef8;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3b4ef8;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(45, 64, 95, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1001,7 +684,7 @@ section {
   padding: 30px 30px 0 30px;
   margin: 30px 15px;
   text-align: center;
-  min-height: 350px;
+  min-height: 300px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   background: #fff;
 }
@@ -1060,11 +743,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3b4ef8;
+  border: 1px solid #ffc451;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3b4ef8;
+  background-color: #ffc451;
 }
 
 /*--------------------------------------------------------------
@@ -1650,4 +1333,12 @@ section {
   background: #ffc451;
   color: #fff;
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Error
+--------------------------------------------------------------*/
+
+.error{
+color: red;
 }
