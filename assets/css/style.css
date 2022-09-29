@@ -1628,14 +1628,14 @@ section {
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+  color: white;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #e7eafe;
-  color: #3b4ef8;
+  color: black;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1647,7 +1647,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #3b4ef8;
+  background: #ffc451;
   color: #fff;
   text-decoration: none;
 }
