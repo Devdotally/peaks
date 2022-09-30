@@ -58,6 +58,34 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+/*-------------------------------------------------------------
+#whatsapp
+--------------------------------------------------------------*/
+.whatsapp{
+  position: fixed;
+  visibility: visible;
+  width: 60px;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  right: 11px;
+  bottom: 150px;
+  z-index: 996;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.whatsapp i {
+  font-size: 36px;
+  color: #25D366;
+  line-height: 0;
+}
+
+.whatsapp:hover {
+  background:rgba(54, 53, 53, 0.541);
+}
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -1341,4 +1369,14 @@ box-shadow:  -5px 5px 13px #c7c7c7,
 
 .error{
 color: red;
+}
+
+
+
+.Bubble__StyledIcon-sc-13azvyr-1{
+  width: 25px;
+}
+.bIBMON{
+  height:45px;
+  width:45px;
 }
