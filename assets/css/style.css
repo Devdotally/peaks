@@ -581,7 +581,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-image: url('/assets/img/about.png');
+  background: url('../img/about.png');
   background-size: cover;
   padding: 60px 0;
   position: relative;
