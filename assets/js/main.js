@@ -244,3 +244,11 @@
   });
 
 })()
+
+/**
+ * whatsapp control
+ */
+ const icon=document.querySelector('.eapp-whatsapp-chat-root-layout-component')
+ window.addEventListener("resize", (e)=>{
+  icon.style.visibility="hidden"
+ })
