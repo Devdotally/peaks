@@ -1,4 +1,4 @@
-jQuery('#submit-form').validate({
+jQuery('#contact-form').validate({
     rules: {
       name: {
         required: true,
