@@ -417,7 +417,7 @@
           </div>
 
           <div class="col-lg-6 mt-4 mt-md-0">
-            <form action="" id="submit-form" class="php-email-form">
+            <form action="https://script.google.com/macros/s/AKfycbwu0OYy1K6COj7ix8P3FWGGMYFo_5mu2x3F3F36lzZq0QTDgXSx2uyFqBItd4--rTn8Pw/exec" id="submit-form" >
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -532,38 +532,7 @@
     <script src="assets/js/validation.js"></script>
 
   <!-- form submission ajax -->
-  <script>
-    $("#submit-form").submit((e) => {
-      e.preventDefault()
-      $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbwu0OYy1K6COj7ix8P3FWGGMYFo_5mu2x3F3F36lzZq0QTDgXSx2uyFqBItd4--rTn8Pw/exec",
-        data: $("#submit-form").serialize(),
-        method: "post",
-        success: function (response) {
-          Swal.fire({
-            title: 'Done!',
-            text: "Message sent successfullly",
-            icon: 'success',
-            confirmButtonColor: '#3085d6',
-            confirmButtonText: 'OK!'
-          }).then(() => {
-            window.location.reload()
-          })
-        },
-        error: function (err) {
-          Swal.fire({
-            title: 'Something went wrong!',
-            text: "Please try again",
-            icon: 'warning',
-            confirmButtonColor: '#3085d6',
-            confirmButtonText: 'OK!'
-          }).then(() => {
-            window.location.reload()
-          })
-        }
-      })
-    })
-  </script>
+  
 
 </body>
 
