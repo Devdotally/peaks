@@ -38,6 +38,8 @@ jQuery('#submit-form').validate({
           showCancelButton: false,
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'OK'
+        }).then(()=>{
+          location.reload()
         })
       },
       error: (err) => {
@@ -48,6 +50,8 @@ jQuery('#submit-form').validate({
           showCancelButton: false,
           confirmButtonColor: '#e14343',
           confirmButtonText: 'OK'
+        }).then(()=>{
+          location.reload()
         })
       }
     })
